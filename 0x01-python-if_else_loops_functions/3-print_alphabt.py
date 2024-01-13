@@ -7,4 +7,4 @@ for i in range(startChar, endChar):
     if chr(i) == 'q' or chr(i) == 'e':
         continue
     else:
-        print("{}".format(chr(i)),end="")
+        print("{}".format(chr(i)), end="")
