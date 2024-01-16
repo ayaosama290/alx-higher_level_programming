@@ -2,7 +2,7 @@
 def uppercase(str):
     h1 = ""
     for i in str:
-        if ord(i) == 32:
+        if ord(i) == 32 or ord(i) == 44:
             h1 = h1 + i
             continue
         elif ord(i) >= 48 and ord(i) <= 57:
