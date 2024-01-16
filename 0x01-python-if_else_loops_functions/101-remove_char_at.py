@@ -5,7 +5,7 @@ def remove_char_at(str, n):
     if n > len(str):
         return str
     if n < 0:
-        n = len(str) + n
+        return str
     for i in range(len(str)):
         if i == n:
             holder1 = str[:n]
