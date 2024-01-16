@@ -5,4 +5,4 @@ def print_tebahpla():
             pass
         else:
             i = i - 32
-        print(chr(i), end="")
+        print("{}".format(chr(i)), end="")
