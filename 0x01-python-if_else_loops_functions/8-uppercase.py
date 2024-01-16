@@ -2,10 +2,18 @@
 def uppercase(str):
     h1 = ""
     for i in str:
-        for j in range(97, 123):
-            if ord(i) == j:
-                i = j - 32
-                i = chr(i)
-                h1 = h1 + i
-                break
-    return h1
+        if ord(i) == 32:
+            h1 = h1 + i
+            continue
+        elif ord(i) >= 48 and ord(i) <= 57:
+            h1 = h1 + i
+            continue
+        elif ord(i) in range(65, 91):
+            h1 = h1 + i
+            continue
+        else:
+            i = ord(i) - 32
+            i = chr(i)
+            h1 = h1 + i
+            continue
+    print("{}".format(h1))
