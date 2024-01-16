@@ -6,3 +6,4 @@ def print_tebahpla():
         else:
             i = i - 32
         print("{}".format(chr(i)), end="")
+print_tebahpla()
